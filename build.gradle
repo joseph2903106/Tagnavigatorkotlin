@@ -1,0 +1,26 @@
+
+buildscript {
+    ext.kotlin_version = '1.2.61'
+
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        maven { url 'http://oss.jfrog.org/artifactory/oss-snapshot-local/' }
+    }
+}
