@@ -48,6 +48,7 @@ class MainActivity : JTabActivity() {
         mylistButton.setOnClickListener(clickListener)
         accountButton.setOnClickListener(clickListener)
         discoverButton.performClick()
+
     }
 
     private val clickListener = View.OnClickListener { v ->

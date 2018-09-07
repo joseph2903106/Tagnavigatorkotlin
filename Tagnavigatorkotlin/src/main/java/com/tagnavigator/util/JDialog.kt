@@ -7,6 +7,8 @@ import android.app.Dialog
 import android.app.ProgressDialog
 import android.content.DialogInterface
 import android.content.DialogInterface.OnClickListener
+import android.os.Build
+import android.support.annotation.RequiresApi
 import android.support.v4.app.FragmentActivity
 import android.view.KeyEvent
 import android.view.LayoutInflater
