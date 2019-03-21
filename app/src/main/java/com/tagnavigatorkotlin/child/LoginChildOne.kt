@@ -6,6 +6,7 @@ package com.tagnavigatorkotlin.child
 
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,6 +15,7 @@ import android.widget.TextView
 import butterknife.BindView
 import butterknife.ButterKnife
 import com.tagnavigator.framework.JChildFragment
+import com.tagnavigatorkotlin.MainActivity
 import com.tagnavigatorkotlin.R
 import com.tagnavigatorkotlin.parent.LoginFragment
 
@@ -33,7 +35,8 @@ class LoginChildOne : JChildFragment<LoginFragment>() {
         ButterKnife.bind(this, content)
         status.text = TAG
         back.setOnClickListener { backToPreviousFragment() }
-
+        var main =getJTabActivity<MainActivity>()
+        Log.d(TAG, "LoginChildOne " + main.isReclaim)
         status.setOnClickListener { commitChildFragment(LoginChildTwo()) }
         return content
     }

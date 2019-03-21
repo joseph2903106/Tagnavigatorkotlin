@@ -27,9 +27,9 @@ android {
         ignoreWarnings true
     }
 
-    kapt {
-        generateStubs = true
-    }
+//    kapt {
+//        generateStubs = true
+//    }
 }
 
 
